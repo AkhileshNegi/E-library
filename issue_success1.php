@@ -6,6 +6,11 @@ $user="root";
 $pass="";
 $con=mysql_connect($host,$user,$pass) or die("unable to connect");
 mysql_select_db("library",$con);
+$sql1="SELECT * FROM book_details WHERE book_name='$book'";
+$retval1 = mysql_query( $sql1, $con);
+$row1=mysql_fetch_array($retval1);
+$row1['Available'];
+if($row1['Available']>0){
 $sql = "UPDATE record_stu
       SET book1='$book'
       WHERE id='$stu_id'";
@@ -13,6 +18,14 @@ $sql = "UPDATE record_stu
    if(! $retval ) {
       die('Could not update data: ' . mysql_error());
    }
+   $row1['Available']--;
+   $count = $row1['Available'];
+   echo $count;
+$sqlbook = "UPDATE book_details
+      SET Available='$count'
+      WHERE book_name='$book'";
+$bookrenew = mysql_query( $sqlbook, $con);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
