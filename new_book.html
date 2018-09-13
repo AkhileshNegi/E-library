@@ -35,15 +35,15 @@
                 <h1 class="title" align="center">Adding a new book</h1><hr><br>
     <form action="add_book.php" method="POST">
       <label for="book_name">Book Name:</label>
-        <input type="text" name="book_name" class="form-control" id="book_name" placeholder="Enter book name "><br>
+        <input type="text" name="book_name" class="form-control" id="book_name" placeholder="Enter book name " required><br>
       <label for="copies">Number of copies:</label>
-        <input type="number" class="form-control" id="copies" placeholder="Enter number of copies" name="copies"><br>
+        <input type="number" class="form-control" id="copies" placeholder="Enter number of copies" name="copies" required><br>
       <label for="location">Location:</label>
-        <input type="text" class="form-control" id="location" placeholder="Enter location of book" name="location"><br>      
+        <input type="text" class="form-control" id="location" placeholder="Enter location of book" name="location" required><br>      
       <label for="Author">Name of the Author:</label>
-        <input type="text" name="author" class="form-control" id="author" placeholder="Enter Author name"><br>
+        <input type="text" name="author" class="form-control" id="author" placeholder="Enter Author name" required><br>
       <label for="Available">Number of Available copies:</label>
-        <input type="text" name="available" class="form-control" id="available" placeholder="Number of available copies for students"><br>
+        <input type="text" name="available" class="form-control" id="available" placeholder="Number of available copies for students" required><br>
      <input type="submit" class="btn btn-success" value="Submit">
           &nbsp &nbsp<input type="reset" class="btn btn-info" value="Reset">
                             </form>

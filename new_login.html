@@ -34,9 +34,9 @@
             <div class="col-sm-offset-1 col-sm-5 text-left" >
                         <form action="new_success.php" method="POST">
       <label for="name">Name:</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="Enter name "><br>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Enter name " required><br>
      <label for="ID">New ID:</label>
-      <input type="text" class="form-control" id="id" placeholder="Enter unique ID " name="id"><br>
+      <input type="text" class="form-control" id="id" placeholder="Enter unique ID " name="id" required><br>
   <label for="branch">Branch:</label>
   </br>
 <label class="radio-inline"><input type="radio" id="branch" name="branch" value="CSE">CSE</label>
@@ -46,7 +46,7 @@
 <label class="radio-inline"><input type="radio" id="branch" name="branch" value="CE">CE</label>
   </br></br>
       <label for="pwd">Password:</label>
-      <input type="password" name="password" class="form-control" id="password" placeholder="Enter password"><br>
+      <input type="password" name="password" class="form-control" id="password" placeholder="Enter password" required><br>
      &nbsp &nbsp<input type="submit" class="btn btn-success" value="Submit">
           &nbsp &nbsp<input type="reset" class="btn btn-info" value="Reset">
                             </form>
