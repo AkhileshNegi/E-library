@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>Bootstrap Example</title>
+  <title>E-Library</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +25,6 @@
     </ul>
   </div>
 </nav>
-
-
         <div class="row">
             <div class="box">
                 <div class="col-sm-12 text-center">
@@ -37,7 +35,6 @@
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                         </ol>
-
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
@@ -47,10 +44,9 @@
                                 <img class="img-responsive img-full" src="bg3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="book1.jpg" alt="">
+                                <img class="img-responsive img-full" src="book12.jpg" alt="">
                             </div>
                         </div>
-
                         <!-- Controls -->
                         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                             <span class="icon-prev"></span>
@@ -59,10 +55,6 @@
                             <span class="icon-next"></span>
                         </a>
                     </div></div></div> </div>
-
-
-
-
                 <div class="row">
             <div class="box">
                 <div class="col-sm-12 text-center">

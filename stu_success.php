@@ -10,7 +10,7 @@ $user="root";
 $pass="";
 $con=mysql_connect($host,$user,$pass) or die("unable to connect");
 mysql_select_db("library",$con);
-$sql = "SELECT * FROM student WHERE id='$ID' AND password='$PASSWORD'";
+$sql = "SELECT * FROM details_stu WHERE id='$ID' AND password='$PASSWORD'";
 $query = mysql_query( $sql, $con);
    if(! $query ) {
       die('Could not update data: ' . mysql_error());

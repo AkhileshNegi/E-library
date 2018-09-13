@@ -1,12 +1,33 @@
+<?php
+
+$return=$_POST["return"];
+$stu_id=$_COOKIE["ID"];
+echo $return;
+// $host="localhost";
+// $user="root";
+// $pass="";
+// $con=mysql_connect($host,$user,$pass) or die("unable to connect");
+// mysql_select_db("library",$con);
+// $sql = "UPDATE record_stu
+//       SET book1='$book'
+//       WHERE id='$stu_id'";
+
+//   $retval = mysql_query( $sql, $con);
+   
+//    if(! $retval ) {
+//       die('Could not update data: ' . mysql_error());
+//    }
+   
+
+?>
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <!-- Begin Head -->
-    <head>
+<html  lang="en" class="no-js">
+<head>
         <!-- Basic -->
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>New Login</title>
+        <title>Admin Login</title>
         <meta name="keywords" content="HTML5 Theme" />
         <meta name="description" content="Megakit - HTML5 Theme">
         <meta name="author" content="keenthemes.com">
@@ -53,12 +74,8 @@
 
 
     </head>
-    <!-- End Head -->
-
-    <!-- Body -->
-    <body>
-
-          <!--========== HEADER ==========-->
+<body>
+   <!--========== HEADER ==========-->
         <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->
             <div class="s-header__navbar">
@@ -94,7 +111,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="../index.php">About</a>
+             <a class="nav-link js-scroll-trigger" href="../index.php">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../index.php">Admin</a>
@@ -163,7 +180,7 @@
         <!--========== END HEADER ==========-->
 
 
-<section style="background-color:#ffc400 ">
+      <section style="background-color:lightblue">
    </section>
 
 <section id="page-breadcrumb">
@@ -173,38 +190,34 @@
                 <div class="col-lg-12 text-center bottom-separator">
                     <img src="ico.png" class="img-responsive inline" alt="">
                 </div>
-                    <div class="action">
-                        <form action="new_success.php" method="POST">
-  
-<div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="Enter name ">
-  </div>
-<br>
-<div class="form-group">
-     <label for="ID">New ID:</label>
-      <input type="text" class="form-control" id="id" placeholder="Enter unique ID " name="id">
- 
-</div>
+                    <div class="container">
+                     
+        <div class="container">
+            <div class="row">
+                            <div class="col-lg-12">
+                    <hr>
+                    <h1 class="intro-text text-center"> 
+                        <strong>B</strong>ook issued
+                                            </h1>
+                    <hr>
+                    </div>
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+            
+                        <a  href="db_stu1.php" button type="button" class="btn btn-info"><h1 class="text-center">Issue more books</h1></a></button>
+                        <!--<span class="subheading">A Clean Blog Theme by Start Bootstrap</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <label for="branch">Branch:</label>
-  </br>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="CSE">CSE</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="EE">EE</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="ECE">ECE</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="ME">ME</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="CE">CE</label>
-  </br>   </br>
-  <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
-    </div>
-     &nbsp &nbsp<input type="submit" class="btn btn-success" value="Submit">
-          &nbsp &nbsp<input type="reset" class="btn btn-info" value="Reset">
-          </form>
-</div>
-
-                        </div>
                      </div>
                 </div>
             </div>
@@ -212,8 +225,10 @@
    </section>
             
 </section>
+            
 
-<section style="background-color:#fff176">
+
+        <section style="background-color:aqua">
 
  <!-- Features -->
         <div id="js__scroll-to-section" class="container g-padding-y-80--xs g-padding-y-125--sm">
@@ -226,8 +241,8 @@
                             </div>
                         </div>
                         <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Responsive Layout</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <h3 class="g-font-size-18--xs">Personalization Features</h3>
+                            <p class="g-margin-b-0--xs">It allows you to view all the books you have and the books available for your branch.You can access it anywhere at anytime and is very helpful if you are far away from college.</p>
                         </div>
                     </div>
                 </div>
@@ -239,8 +254,8 @@
                             </div>
                         </div>
                         <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Fully Customizable</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <h3 class="g-font-size-18--xs">Searching</h3>
+                            <p class="g-margin-b-0--xs">You can see the books available and searching is easy.You can see the books of your branch whether available or not.You can also read all the journals and newspapers which will help you in increasing your general knowledge</p>
                         </div>
                     </div>
                 </div>
@@ -252,8 +267,8 @@
                             </div>
                         </div>
                         <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Powerful Performance</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <h3 class="g-font-size-18--xs">Library Features</h3>
+                            <p class="g-margin-b-0--xs">It is more interactive and has ease of access.It is secure and reliable and provides effective and efficient storage of booksand is very helpful for all the students as well as for institution.</p>
                         </div>
                     </div>
                 </div>
@@ -280,7 +295,7 @@
 
 
 
-<!--========== FOOTER ==========-->
+          <!--========== FOOTER ==========-->
         <footer class="g-bg-color--dark">
             <!-- Links -->
             <div class="g-hor-divider__dashed--white-opacity-lightest">
@@ -337,6 +352,8 @@
             <!-- End Copyright -->
         </footer>
         <!--========== END FOOTER ==========-->
+
+
         <!-- Back To Top -->
         <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
 
@@ -391,7 +408,8 @@
     <!-- Custom scripts for this template -->
     <script src="js2/creative.min.js"></script>
 
-<!-- THEME2-->
-    </body>
-    <!-- End Body -->
+
+
+
+</body> 
 </html>

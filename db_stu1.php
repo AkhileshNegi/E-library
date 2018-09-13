@@ -1,6 +1,5 @@
 <?php
 
-
 $ID1=$_COOKIE["ID"];
 $host="localhost";
 $user="root";
@@ -200,7 +199,7 @@ if(mysql_num_rows($query) > 0)
                        
                     </div>
                 </div>
-                <div class="g-width-100--xs g-height-400--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/01.jpg');">
+                <div class="g-width-100--xs g-height-400--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/117.jpg');">
                     <div class="container g-text-center--xs g-ver-center--xs">
                         <div class="g-margin-b-10--xs">
                             <div class="g-margin-b-30--xs">
@@ -235,9 +234,7 @@ if(mysql_num_rows($query) > 0)
                          echo $row1['book1'];
 ?></strong></font>&nbsp &nbsp &nbsp &nbsp
                         <a href="book_issue1.php" button type="button" class="btn btn-success">Issue</a></button>
-                        <button type="button" class="btn btn-warning">Return</button>
-
-
+                        <a href="return_success1.php" button type="button" class="btn btn-warning">Return</a></button>
                     </h2>
                     <hr>
 
@@ -249,7 +246,7 @@ if(mysql_num_rows($query) > 0)
                          echo $row1['book2'];
 ?></strong></font>&nbsp &nbsp &nbsp &nbsp
                        <a href="book_issue2.php" button type="button" class="btn btn-success">Issue</a></button>
-                        <button type="button" class="btn btn-warning">Return</button>
+                        <a href="return_success2.php" button type="button" class="btn btn-warning">Return</a></button>
 
 
                     </h2><hr>
@@ -262,7 +259,7 @@ if(mysql_num_rows($query) > 0)
                          echo $row1['book3'];
 ?></strong></font>&nbsp &nbsp &nbsp &nbsp
                         <a href="book_issue3.php" button type="button" class="btn btn-success">Issue</a></button>
-                        <button type="button" class="btn btn-warning">Return</button>
+                        <a href="return_success3.php" button type="button" class="btn btn-warning">Return</a></button>
 
 
                     </h2><hr>
@@ -274,7 +271,7 @@ if(mysql_num_rows($query) > 0)
                          echo $row1['book4'];
 ?></strong></font>&nbsp &nbsp &nbsp &nbsp
                          <a href="book_issue4.php" button type="button" class="btn btn-success">Issue</a></button>
-                        <button type="button" class="btn btn-warning">Return</button>
+                        <a href="return_success4.php" button type="button" class="btn btn-warning">Return</a></button>
 
 
                     </h2><hr>

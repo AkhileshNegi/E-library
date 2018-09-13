@@ -136,7 +136,7 @@
                 
             
                 <!-- Action -->
-ss                <ul class="list-inline s-header__action s-header__action--rb">
+                <ul class="list-inline s-header__action s-header__action--rb">
                     <li class="s-header__action-item">
                         <a class="s-header__action-link" href="#">
                             <i class="g-padding-r-5--xs ti-facebook"></i>
@@ -163,34 +163,57 @@ ss                <ul class="list-inline s-header__action s-header__action--rb">
         <!--========== END HEADER ==========-->
 
 
-    <div class="container">
+<?php 
 
+$name =$_POST['name'];
+$id =$_POST['id'];
+$branch =$_POST['branch'];
+$password =$_POST['password'];
+$host="localhost";
+$user="root";
+$pass="";
+$con=mysql_connect($host,$user,$pass) or die("unable to connect");
+mysql_select_db("library",$con);
+$sql = "INSERT INTO details_stu (name, ID, branch, password)  
+VALUES ('$name', '$id', '$branch', '$password')";
+$retval = mysql_query( $sql, $con);
+if(! $retval ) {
+      die('Could not update data1: ' . mysql_error());
+   }
+$sql2 = "INSERT INTO record_stu (id, book1, book2, book3, book4)  
+VALUES ('$id', '', '', '', '')";
+$retval2 = mysql_query( $sql2, $con);
+if(! $retval ) {
+      die('Could not update data2: ' . mysql_error());
+   }
+?>
+    <div class="container">
         <div class="row1">
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">Welcome
-                        <strong><?php echo $NAME."</br>";?></strong>
+                        <strong><?php echo $name."</br>";?></strong>
                     </h2>
                     <hr>
 
 <hr>
                     <h2 class="intro-text text-center">Your ID
-                        <strong><?php echo $ID."</br>";?></strong>
+                        <strong><?php echo $id."</br>";?></strong>
                     </h2>
                     <hr>
 
 
 <hr>
                     <h2 class="intro-text text-center">Branch
-                        <strong><?php echo $BRANCH."</br>";?></strong>
+                        <strong><?php echo $branch."</br>";?></strong>
                     </h2>
                     <hr>
 
 
 <hr>
                     <h2 class="intro-text text-center">Password
-                        <strong><?php echo $PASSWORD."</br>";?></strong>
+                        <strong><?php echo $password."</br>";?></strong>
                     </h2>
                     <hr>                
                     </div>
