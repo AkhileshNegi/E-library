@@ -1,25 +1,20 @@
 <?php 
 
-$name =$_POST['name'];
-$id =$_POST['id'];
-$branch =$_POST['branch'];
-$password =$_POST['password'];
+$book_name =$_POST['book_name'];
+$copies =$_POST['copies'];
+$location =$_POST['location'];
+$author =$_POST['author'];
+$available =$_POST['available'];
 $host="localhost";
 $user="root";
 $pass="";
 $con=mysql_connect($host,$user,$pass) or die("unable to connect");
 mysql_select_db("library",$con);
-$sql = "INSERT INTO details_stu (name, ID, branch, password)  
-VALUES ('$name', '$id', '$branch', '$password')";
+$sql = "INSERT INTO book_details (book_name, no_of_copies, location, Author, Available)  
+VALUES ('$book_name', '$copies', '$location', '$author', '$available')";
 $retval = mysql_query( $sql, $con);
 if(! $retval ) {
       die('Could not update data1: ' . mysql_error());
-   }
-$sql2 = "INSERT INTO record_stu (id, book1, book2, book3, book4)  
-VALUES ('$id', '', '', '', '')";
-$retval2 = mysql_query( $sql2, $con);
-if(! $retval ) {
-      die('Could not update data2: ' . mysql_error());
    }
 ?>
 <!DOCTYPE html>
@@ -55,30 +50,35 @@ if(! $retval ) {
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Welcome
-                        <strong><?php echo $name."</br>";?></strong>
+                    <h2 class="intro-text text-center">New book Added: 
+                        <strong><?php echo $book_name."</br>";?></strong>
                     </h2>
                     <hr>
 
 <hr>
-                    <h2 class="intro-text text-center">Your ID
-                        <strong><?php echo $id."</br>";?></strong>
-                    </h2>
-                    <hr>
-
-
-<hr>
-                    <h2 class="intro-text text-center">Branch
-                        <strong><?php echo $branch."</br>";?></strong>
+                    <h2 class="intro-text text-center">Number of Copies: 
+                        <strong><?php echo $copies."</br>";?></strong>
                     </h2>
                     <hr>
 
 
 <hr>
-                    <h2 class="intro-text text-center">Password
-                        <strong><?php echo $password."</br>";?></strong>
+                    <h2 class="intro-text text-center">Location: 
+                        <strong><?php echo $location."</br>";?></strong>
                     </h2>
-                    <hr>                
+                    <hr>
+
+
+<hr>
+                    <h2 class="intro-text text-center">Author Name: 
+                        <strong><?php echo $author."</br>";?></strong>
+                    </h2>
+                    <hr> 
+<hr>
+                    <h2 class="intro-text text-center">Number of Copies Available: 
+                        <strong><?php echo $available."</br>";?></strong>
+                    </h2>
+                    <hr><br>                
                     </div>
             </div>
 </div>

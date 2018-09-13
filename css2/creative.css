@@ -68,7 +68,8 @@ background-color: aqua;
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 1px;
+}
 
 .section-heading {
   margin-top: 0; }

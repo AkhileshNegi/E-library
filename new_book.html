@@ -29,25 +29,22 @@
 </nav>
 <section id="page-breadcrumb">
         <div class="row">
-            <div class="col-sm-3 " align="left">
+            <div class="col-sm-3 " align="center">
             </div>
             <div class="col-sm-offset-1 col-sm-5 text-left" >
-                        <form action="new_success.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="Enter name "><br>
-     <label for="ID">New ID:</label>
-      <input type="text" class="form-control" id="id" placeholder="Enter unique ID " name="id"><br>
-  <label for="branch">Branch:</label>
-  </br>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="CSE">CSE</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="EE">EE</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="ECE">ECE</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="ME">ME</label>
-<label class="radio-inline"><input type="radio" id="branch" name="branch" value="CE">CE</label>
-  </br></br>
-      <label for="pwd">Password:</label>
-      <input type="password" name="password" class="form-control" id="password" placeholder="Enter password"><br>
-     &nbsp &nbsp<input type="submit" class="btn btn-success" value="Submit">
+                <h1 class="title" align="center">Adding a new book</h1><hr><br>
+    <form action="add_book.php" method="POST">
+      <label for="book_name">Book Name:</label>
+        <input type="text" name="book_name" class="form-control" id="book_name" placeholder="Enter book name "><br>
+      <label for="copies">Number of copies:</label>
+        <input type="number" class="form-control" id="copies" placeholder="Enter number of copies" name="copies"><br>
+      <label for="location">Location:</label>
+        <input type="text" class="form-control" id="location" placeholder="Enter location of book" name="location"><br>      
+      <label for="Author">Name of the Author:</label>
+        <input type="text" name="author" class="form-control" id="author" placeholder="Enter Author name"><br>
+      <label for="Available">Number of Available copies:</label>
+        <input type="text" name="available" class="form-control" id="available" placeholder="Number of available copies for students"><br>
+     <input type="submit" class="btn btn-success" value="Submit">
           &nbsp &nbsp<input type="reset" class="btn btn-info" value="Reset">
                             </form>
             </div>            

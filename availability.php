@@ -42,10 +42,10 @@
             </div>
             <div class="col-sm-5 text-center">
                     <hr><h1 class="title" align="center">Welcome</h1><hr><br>
-                    <form action="db_stu.php" method="POST">
+                    <form action="check_result.php" method="POST">
                         <div class="form-group">
-                            <label for="ID">Enter Student ID:</label>
-                            <input type="text" class="form-control" id="id1" placeholder="Enter student ID " name="id1">
+                            <label for="name">Enter name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Book name or Author name " name="name">
                         </div>
                         <input type="submit" class="btn btn-success" value="Submit">
                         <input type="reset" class="btn btn-info" value="Reset">
