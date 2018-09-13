@@ -60,8 +60,16 @@ if(mysql_num_rows($query) > 0)
                         ?>
                     </strong>
                 </font>&nbsp &nbsp &nbsp &nbsp
+                   <?php 
+                if($row1['book1']==''){?>
                 <a href="book_issue1.php" button type="button" class="btn btn-success">Issue</a></button>
+                <?php    
+                }
+                else{?>
                 <a href="return_success1.php" button type="button" class="btn btn-warning">Return</a></button>
+                <?php    
+                }
+                ?>
             </h2>
             <hr>
             <hr>
@@ -73,8 +81,16 @@ if(mysql_num_rows($query) > 0)
                 ?>
                     </strong>
                 </font>&nbsp &nbsp &nbsp &nbsp
+                <?php 
+                if($row1['book2']==''){?>
                 <a href="book_issue2.php" button type="button" class="btn btn-success">Issue</a></button>
+                <?php    
+                }
+                else{?>
                 <a href="return_success2.php" button type="button" class="btn btn-warning">Return</a></button>
+                <?php    
+                }
+                ?>
             </h2>
             <hr>
             <hr>
@@ -86,8 +102,16 @@ if(mysql_num_rows($query) > 0)
                     ?>
                     </strong>
                 </font>&nbsp &nbsp &nbsp &nbsp
+                <?php 
+                if($row1['book3']==''){?>
                 <a href="book_issue3.php" button type="button" class="btn btn-success">Issue</a></button>
+                <?php    
+                }
+                else{?>
                 <a href="return_success3.php" button type="button" class="btn btn-warning">Return</a></button>
+                <?php    
+                }
+                ?>
             </h2>
             <hr>
             <hr>
@@ -99,8 +123,16 @@ if(mysql_num_rows($query) > 0)
                 ?>
                     </strong>
                 </font>&nbsp &nbsp &nbsp &nbsp
-                 <a href="book_issue4.php" button type="button" class="btn btn-success">Issue</a></button>
+                 <?php 
+                if($row1['book4']==''){?>
+                <a href="book_issue4.php" button type="button" class="btn btn-success">Issue</a></button>
+                <?php    
+                }
+                else{?>
                 <a href="return_success4.php" button type="button" class="btn btn-warning">Return</a></button>
+                <?php    
+                }
+                ?>
             </h2>
             <hr>
         </div>   
