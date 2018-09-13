@@ -5,6 +5,19 @@ $user="root";
 $pass="";
 $con=mysql_connect($host,$user,$pass) or die("unable to connect");
 mysql_select_db("library",$con);
+$sql1="SELECT * FROM record_stu WHERE id='$stu_id'";
+$retval1 = mysql_query( $sql1, $con);
+$row1=mysql_fetch_array($retval1);
+$change_book = $row1['book3'];
+$sql2="SELECT * FROM book_details WHERE book_name='$change_book'";
+$retval2 = mysql_query( $sql2, $con);
+$row2=mysql_fetch_array($retval2);
+$count = $row2['Available'];
+$count++;
+$sqlbook = "UPDATE book_details
+      SET Available='$count'
+      WHERE book_name='$change_book'";
+$bookrenew = mysql_query( $sqlbook, $con);
 $sql = "UPDATE record_stu
       SET book3=''
       WHERE id='$stu_id'";
