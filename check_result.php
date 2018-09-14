@@ -84,8 +84,46 @@ if($count >0)
                     <h2 class="intro-text text-center">Number of Copies Available: 
                         <strong><?php echo $row1['Available']."</br>";?></strong>
                     </h2>
-                    <hr><br>
+                    <hr>
+        <div class="row">
+      <div class="col-sm-3 " align="left"> 
+      </div>
+      <div class="col-sm-6 text-center">
+        <a href="stu_login.html" class="btn btn-info  btn-lg" role="button" >Go Back</a>
+      </div>
+      <div class="col-sm-3 " align="left"> 
+      </div></div><br>
         </div>   
+    </section><br>
+    <section id="page-breadcrumb">
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Serial No.</th>
+        <th>Issued to</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      $searched_book = $row1['book_name'];
+$sql1="SELECT id FROM record_stu WHERE book1='$searched_book' OR book2='$searched_book' OR book3='$searched_book' OR book4='$searched_book'";
+$query1=mysql_query($sql1,$con);
+$i=1;
+while($rowTS = mysql_fetch_array($query1)) { 
+  $summary = $rowTS['id']; 
+$name_search="SELECT * FROM details_stu WHERE ID='$summary'";
+$get_name=mysql_query($name_search,$con);
+$save_name=mysql_fetch_array($get_name);
+      echo "<tr>";
+        echo "<td>".$i."</td>";
+        echo "<td>".$save_name['name']."</td>";
+        echo "<td>".$summary."</td>";
+      echo "</tr>";
+      $i++;
+}?>
+    </tbody>
+  </table>
     </section>
     <div class="row">
         <div class="box">

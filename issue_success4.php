@@ -25,7 +25,6 @@ $sqlbook = "UPDATE book_details
       SET Available='$count'
       WHERE book_name='$book'";
 $bookrenew = mysql_query( $sqlbook, $con);
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,3 +94,8 @@ $bookrenew = mysql_query( $sqlbook, $con);
 </div>
 </body>
 </html>
+<?php
+}else{
+  echo "this book is not available";
+}
+?>
