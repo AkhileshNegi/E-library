@@ -85,6 +85,8 @@ $row = mysql_fetch_array($query);
       </div>
       <div class="col-sm-6 text-center">
         <a href="availability.php" class="btn btn-info  btn-lg" role="button" >Check Available books</a>
+      <br><br>
+        <a href="order_books.php" class="btn btn-info  btn-lg" role="button" >Order books</a>
       </div>
       <div class="col-sm-3 " align="left"> 
       </div>
