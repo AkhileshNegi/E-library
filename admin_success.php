@@ -60,8 +60,9 @@ if(mysql_num_rows($query) > 0)
                     </h1>
                     <hr>
          <br><a href="issue_login.php" class="btn btn-info  btn-lg" role="button" >Issue/submit book</a><br><br>
-                 <a href="new_login.html" class="btn btn-info  btn-lg" role="button" >new student id</a><br><br>
-                 <a href="new_book.html" class="btn btn-info  btn-lg" role="button" >add new book</a>
+                 <a href="new_login.html" class="btn btn-info  btn-lg" role="button" >New student id</a><br><br>
+                 <a href="new_book.html" class="btn btn-info  btn-lg" role="button" >Add new book</a><br><br>
+                 <a href="ordered_books.php" class="btn btn-info  btn-lg" role="button" >See ordered books</a>
             </div>
             <div class="col-sm-2 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">                   
             </div>
