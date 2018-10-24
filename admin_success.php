@@ -46,7 +46,7 @@ if(mysql_num_rows($query) > 0)
         <div class="row">
             <div class="col-sm-3 " align="left"> 
                 <div >
-                    <div class="s-team-v1">
+                    <div class="s-team-v1"><br><br><br><br><br>
                         <img class="img-responsive "  src="book7.png" alt="Image">
                         <div class="g-text-center--xs">
                         </div>
